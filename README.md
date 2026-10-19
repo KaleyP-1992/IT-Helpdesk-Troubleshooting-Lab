@@ -32,6 +32,8 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 
 **Resolution:** Confirmed successful network connectivity with no packet loss during the tests.
 
+![Network Connectivity Test](Screenshots/15-Internet%20Connectivity%20Test.png)
+
 ### Ticket #002: DNS Resolution Troubleshooting
 
 **Issue:** Investigate DNS lookup timeouts and a failed DNS forwarder diagnostic.
@@ -44,6 +46,10 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 
 **Resolution:** Identified an unresponsive DNS forwarder, configured a working forwarder, and verified that DNS diagnostic tests passed.
 
+![Active Directory DNS Lookup](Screenshots/07-Active%20Directory%20DNS%20SRV%20Lookup.png)
+
+![DNS Forwarder Fixed](Screenshots/13-DNS%20Forwarder%20Fixed.png)
+
 ### Ticket #003: Print Spooler Troubleshooting
 
 **Issue:** Simulate a stopped Print Spooler service and restore functionality.
@@ -54,6 +60,8 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 - `net start spooler`
 
 **Resolution:** Restarted the Print Spooler service and verified that its status returned to RUNNING.
+
+![Print Spooler Restored](Screenshots/18-Print%20Spooler%20Restored.png)
 
 ### Ticket #004: Event Viewer Investigation
 
@@ -66,6 +74,8 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 
 **Resolution:** Located Service Control Manager events documenting Print Spooler service state changes.
 
+![Print Spooler Event Viewer](Screenshots/19-Print%20Spooler%20Event%20Viewer.png)
+
 ### Ticket #005: Windows Startup Investigation
 
 **Issue:** Investigate startup activity and check for unexpected shutdowns.
@@ -76,6 +86,8 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 - Event IDs 6005, 6006, and 6008
 
 **Findings:** Reviewed startup applications, confirmed an Event Log service startup event, and found no Event ID 6008 entries in the filtered logs. No configuration changes were required.
+
+![Windows Startup Event](Screenshots/20-Windows%20Startup%20Event.png)
 
 ### Ticket #006: Disk Health and File System Troubleshooting
 
@@ -94,6 +106,10 @@ The goal was to develop practical troubleshooting skills, practice using Windows
 - CHKDSK reported no file system problems.
 
 **Resolution:** Completed disk diagnostics without identifying a reported disk health or file system problem. No repairs were performed.
+
+![Disk Health Verification](Screenshots/21-Disk%20Health%20Verification.png)
+
+![Disk File System Verification](Screenshots/22-Disk%20File%20System%20Verification.png)
 
 ## Skills Demonstrated
 
